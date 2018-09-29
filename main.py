@@ -16,7 +16,7 @@ auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_token, access_token_secret)
 api = tweepy.API(auth)
 
-city = 'Frisco'
+city = yourCity
 
 
 response = requests.get('http://api.openweathermap.org/data/2.5/weather?q='+city+'&APPID='+ API_key + '&units=imperial')
