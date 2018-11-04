@@ -25,8 +25,8 @@ web_map = json.loads(response.text)
 
 for i in range(3):
     temperature = (web_map['main']['temp'])
-    message = 'The weather right now is ' + str(temperature) + '°F in Frisco, TX ' + "(" + str(i) + ')'
-    message += " #DailyFriscoWeather"
+    message = 'The weather right now is ' + str(temperature) + '°F in YourCity ' + "(" + str(i) + ')'
+    message += " #DailyWeather"
 
     api.update_status(message)
     time.sleep(60)
